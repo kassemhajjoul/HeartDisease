@@ -19,7 +19,10 @@ selected = option_menu(
 st.expander('Expander')
 with st.sidebar:
     uploaded_file = st.file_uploader("Choose a file")
-    df = pd.read_csv(uploaded_file, encoding = 'ISO-8859-1')    
+    if uploaded_file is None:
+        df = pd.read_csv("heart_disease_health_indicators_BRFSS2015 2 (1).csv", encoding = 'ISO-8859-1')
+    if uploaded_file is not None:
+        df = pd.read_csv(uploaded_file, encoding = 'ISO-8859-1')   
 if selected == "Home":
     st.title("HomePage")
     from PIL import Image
