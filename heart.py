@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import plotly.figure_factory as ff
-from st_aggrid import AgGrid
+from streamlit_aggrid import AgGrid
 st.set_page_config(page_title="Heart Disease Prediction", page_icon="🫀",layout='wide')
 from streamlit_option_menu import option_menu
 selected = option_menu(
