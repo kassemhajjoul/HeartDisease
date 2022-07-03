@@ -23,7 +23,7 @@ with st.sidebar:
 if selected == "Home":
     st.title("HomePage")
     from PIL import Image
-    image = Image.open('/Users/kassemhajjoul/Desktop/Healthcare Analytics/heartdisease.png')
+    image = Image.open('heartdisease.png')
     st.image(image,width=500)
     st.write("In this tool, the dashboard will present the medical, social and lifestyle status of the patient to analyze the correlation between these factors and the risks of a heart-disease.")
     st.write("The tool will futhermore predict the user test case to assess the model.")
